@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy bird</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <canvas class="canvas"></canvas>
+
+    <div class="counter hidden">0</div>
+
+    <div class="start-screen">
+        <div class="start-screen__inner">
+            <img class="name" src="./assets/images/name.png"><br>
+            
+   <img class="btn-rate" src="./assets/images/button-rate.png"><br>
+   <div class="btns">
+      <img class="btn-start" src="./assets/images/button-play.png">
+      <img class="btn-top" src="./assets/images/button-top.png"><br>
+            </div>
+            <img class="company" src="./assets/images/company.png">
+        </div>
+    </div>
+
+    <div class="death">
+        Вы проиграли!<br><br>
+        Набрано:
+        <div class="score"></div>
+        Рекорд:
+        <div class="record"></div>
+        <button class="retry">Заново</button>
+    </div>
+
+    <div class="sounds">
+        <audio class="jump-sound" src="./assets/images/audio/sfx_wing.wav"></audio>
+        <audio class="score-sound" src="./assets/images/audio/sfx_point.wav"></audio>
+        <audio class="hit-sound" src="./assets/images/audio/sfx_hit.wav"></audio>
+        <audio class="die-sound" src="./assets/images/audio/sfx_die.wav"></audio>
+    </div>
+    
+    <img class="column-top" src="./assets/images/column-top.png"></img>
+    <img class="column-bottom" src="./assets/images/column-bottom.png"></img>
+    <img class="background" src="./assets/images/background.png"></img>
+
+    <script src="script.js"></script>
+</body>
+</html>
